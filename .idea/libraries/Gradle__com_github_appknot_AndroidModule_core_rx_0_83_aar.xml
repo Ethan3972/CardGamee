@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.appknot.AndroidModule:core-rx:0.83@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afe9954c984ed7d96fb067b49caa137b/jetified-core-rx-0.83/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afe9954c984ed7d96fb067b49caa137b/jetified-core-rx-0.83/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afe9954c984ed7d96fb067b49caa137b/jetified-core-rx-0.83/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.appknot.AndroidModule/core-rx/0.83/98fa1fd2120f4d4c5012cee1c521eff33df5ecfa/core-rx-0.83-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="level"
+            type="com.example.cardgame.ui.dialog.LevelDialog" />
+
+        <variable
+            name="baseVM"
+            type="com.example.cardgame.vm.BaseViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_level_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쉬움"
+            android:onClick="@{v -> level.selectLevel(baseVM.LEVEL_EASY)}"/>
+
+        <Button
+            android:id="@+id/btn_level_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보통"
+            android:onClick="@{v -> level.selectLevel(baseVM.LEVEL_NORMAL)}"/>
+
+        <Button
+            android:id="@+id/btn_level_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어려움"
+            android:onClick="@{v -> level.selectLevel(baseVM.LEVEL_HARD)}"/>
+    </LinearLayout>
+
+</layout>

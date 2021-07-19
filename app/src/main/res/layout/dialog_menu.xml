@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="menu"
+            type="com.example.cardgame.ui.dialog.MenuDialog" />
+
+        <variable
+            name="baseVM"
+            type="com.example.cardgame.vm.BaseViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_resume"
+            style="@style/BtnBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이어서"
+            android:onClick="@{v -> menu.selectMenu(baseVM.MENU_RESUME)}"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종료"
+            android:onClick="@{v -> menu.selectMenu(baseVM.MENU_FINISH)}"/>
+    </LinearLayout>
+
+</layout>

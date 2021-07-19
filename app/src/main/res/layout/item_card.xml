@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="18dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/iv_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ahri"
+                android:foreground="@drawable/bg_card_front"
+                android:padding="3dp"
+                app:layout_constraintDimensionRatio="h, 1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iv_card_back"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:foreground="@drawable/bg_card_back"
+                app:layout_constraintLeft_toLeftOf="@id/iv_card_front"
+                app:layout_constraintTop_toTopOf="@id/iv_card_front"
+                app:layout_constraintRight_toRightOf="@id/iv_card_front"
+                app:layout_constraintBottom_toBottomOf="@id/iv_card_front"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
